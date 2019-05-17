@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+:root {
+  --color-back: #eee;
+  --color-even: rgba(221, 221, 221, 0.151);
+  --color-odd: rgba(187, 187, 187, 0.329);
+  --color-sym: #5959c1;
+  --color-num: #37ab00;
+  --color-rest: #272727; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  overflow: hidden; }
+
+.container {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; }
+
+.menu {
+  display: flex;
+  height: 5vh;
+  background-color: var(--color-back);
+  align-items: center;
+  justify-content: center; }
+  .menu__text {
+    border: none;
+    width: 30vh;
+    height: 3vh;
+    border-radius: 1rem;
+    text-align: center; }
+    .menu__text::placeholder {
+      text-align: center;
+      font-family: inherit; }
+    .menu__text:active, .menu__text:focus {
+      outline: none; }
+  .menu__wrap {
+    -webkit-appearance: none; }
+    .menu__wrap:checked + label .icon-insert-template {
+      fill: var(--color-num); }
+  .menu__fullscreen {
+    -webkit-appearance: none; }
+    .menu__fullscreen:checked + label .icon-enlarge {
+      fill: var(--color-num); }
+
+.box {
+  display: flex;
+  flex-wrap: nowrap; }
+  .box__letter {
+    height: 30vw;
+    width: 20vw;
+    border: 0.2rem solid #888;
+    margin: 0.5rem;
+    flex: 1 1 15vh;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.336);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25vw; }
+    .box__letter:nth-child(odd) {
+      background-color: var(--color-odd); }
+    .box__letter:nth-child(even) {
+      background-color: var(--color-even); }
+    .box__letter:first-child {
+      border-top-left-radius: 10%;
+      border-bottom-left-radius: 10%; }
+    .box__letter:last-child {
+      border-top-right-radius: 10%;
+      border-bottom-right-radius: 10%; }
+
+.number {
+  color: var(--color-num); }
+
+.symbol {
+  color: var(--color-sym); }
+
+.alpha {
+  color: var(--color-rest); }
+
+.icon {
+  height: 3vh;
+  width: 3vh;
+  padding: 0.2rem;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.icon-insert-template {
+  fill: var(--color-rest); }
+
+.icon-github {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem; }
