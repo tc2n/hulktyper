@@ -1,4 +1,4 @@
-# HulkTyper
+# [HulkTyper](https://hulktyper-git-tc2n-zeit-1.tusharc2n.now.sh/)
 Type anything in big font, the font adjusts according to the screen size and length of the input.
 ### [Demo](https://hulktyper-git-tc2n-zeit-1.tusharc2n.now.sh/)
 
